@@ -4,7 +4,7 @@ Current version: 1.2
 
 Small and very useful service for Symfony 4 and 5 offering deep nesting of configuration files with easy access to them using simple dotted (.) notation.
 
-### service works with Symfony 4 and 5 (repository includes version 5 of framework)
+### Service works with Symfony 4 and 5 (repository includes version 5 of framework)
 
 Deep Config allows for unlimited nesting of configuration files and quick access to them in a very friendly way using dotted notation. It allows you to quickly navigate through multi-level configurations consisting of many files and arrays in a transparent way using a simple syntax. Deep Config also offers easy use of the configuration stored in database. Twig extension is also included.
 
