@@ -42,7 +42,7 @@ Let's imagine directory structure in `/config` directory:
 			  |--- street.yaml
 ```
 
-...and if the `street.yaml` has an array with key name `house`:
+...and if the `street.yaml` has an array with key named `house`:
 
 
 `house: "some_house"`
