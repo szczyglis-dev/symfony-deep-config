@@ -1,0 +1,101 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+<h1>Deep Config Service Examples</h1>
+<div style="text-align: center"><a href="https://github.com/szczyglis-dev/symfony-deep-config">https://github.com/szczyglis-dev/symfony-deep-config</a></div>
+
+<table class="example_table">
+<tr>
+<td>
+<h2 class="bc">[Controller]</h2>
+<h2>$config->get('level1')</h2>
+	{{ dump(level1) }}
+
+<h2>$config->get('level1.foo')</h2>
+	{{ dump(level1_foo) }}
+
+<h2>$config->get('level1.foo.foo1')</h2>
+	{{ dump(level1_foo_foo1) }}
+
+<h2>$config->get('level1.foo.foo2.foo3')</h2>
+	{{ dump(level1_foo_foo2_foo3) }}
+
+<h2><span class="bt">[Twig]</span> conf('level1.foo.foo1')</h2>
+	{{ conf('level1.foo.foo1') }}
+</td>
+<td class="f">
+	<h3>config/level1.yaml</h3>
+<pre>
+foo:
+  foo1: "bar1"
+  foo2: 
+    foo3: "bar3"
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>
+<h2 class="bc">[Controller]</h2>
+<h2>$config->get('second.level2')</h2>
+	{{ dump(level2) }}
+
+<h2>$config->get('second.level2.foo')</h2>
+	{{ dump(level2_foo) }}
+
+<h2>$config->get('second.level2.foo.foo1')</h2>
+	{{ dump(level2_foo_foo1) }}
+
+<h2>$config->get('second.level2.foo.foo2.foo3')</h2>
+	{{ dump(level2_foo_foo2_foo3) }}
+
+<h2><span class="bt">[Twig]</span> conf('second.level2.foo.foo1')</h2>
+	{{ conf('second.level2.foo.foo1') }}
+</td>
+<td class="f">
+	<h3>config/second/level2.yaml</h3>
+<pre>
+foo:
+  foo1: "bar1 in level2 in second folder"
+  foo2: 
+    foo3: "bar3 in level2 in second folder"
+</pre>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<h2 class="bc">[Controller]</h2>
+<h2>$config->get('second.third.level3')</h2>
+	{{ dump(level3) }}
+
+<h2>$config->get('second.third.level3.foo')</h2>
+	{{ dump(level3_foo) }}
+
+<h2>$config->get('second.third.level3.foo.foo1')</h2>
+	{{ dump(level3_foo_foo1) }}
+
+<h2>$config->get('second.third.level3.foo.foo2.foo3')</h2>
+	{{ dump(level3_foo_foo2_foo3) }}
+<h2><span class="bt">[Twig]</span> conf('second.third.level3.foo.foo1')</h2>
+	{{ conf('second.third.level3.foo.foo1') }}
+</td>
+<td class="f">
+	<h3>config/second/third/level3.yaml</h3>
+<pre>
+foo:
+  foo1: "bar1 in level3 in third folder"
+  foo2: 
+    foo3: "bar3 in level3 in third folder"
+</pre>
+</td>
+</tr>
+
+</table>
+
+<h1>...level4, level5, and so on... you can nesting config files and the arrays inside deeper and deeper.<br><br>Enjoy!</h1><br><br>
+<div style="text-align:center">MIT License | 2020 Marcin 'szczyglis' Szczygliński<br>
+<a href="https://github.com/szczyglis-dev/symfony-deep-config">https://github.com/szczyglis-dev/symfony-deep-config</a><br>
+Contact: szczyglis@protonmail.com</div>
+{% endblock %}

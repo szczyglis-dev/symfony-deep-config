@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New DeepConfig{% endblock %}
+
+{% block body %}
+    <h1>Create new DeepConfig</h1>
+
+    {{ include('deep_config/_form.html.twig') }}
+
+    <a href="{{ path('deep_config_index') }}">back to list</a>
+{% endblock %}

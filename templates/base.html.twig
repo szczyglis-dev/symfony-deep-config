@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Deep Config Examples{% endblock %}</title>
+        <style>
+        	html, body {
+        		font-family: "Lucida Console", Monaco, monospace;
+        		font-size: 1rem;
+        	}
+        	table {
+        		width:100%;
+        		border:1px solid #000;
+        	}
+			.example_table {
+				border:0;
+				padding: 0;
+				border-spacing: 0;
+			}
+			.example_table td {
+				vertical-align: top;
+				border-bottom:14px solid #000;
+				width: 50%;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			.f {
+				padding-top: 60px;
+				padding-left: 30px;
+				font-size: 26px;
+			}
+			.bc {
+				color: red;
+			}
+			.bt {
+				color: blue;
+			}
+			h1 {
+				text-align: center;
+			}
+			pre {
+				background: silver;
+			}
+			</style>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

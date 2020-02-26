@@ -1,0 +1,4 @@
+foo:
+  foo1: "bar1 in level2 in second folder"
+  foo2: 
+    foo3: "bar3 in level2 in second folder"

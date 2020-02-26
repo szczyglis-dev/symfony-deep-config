@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit DeepConfig{% endblock %}
+
+{% block body %}
+    <h1>Edit DeepConfig</h1>
+
+    {{ include('deep_config/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('deep_config_index') }}">back to list</a>
+
+    {{ include('deep_config/_delete_form.html.twig') }}
+{% endblock %}
