@@ -100,7 +100,7 @@ If you don't need database support then you can disable database storage by:
 
 `$config->useDatabase(false);`
 
-or in better way by argument specified in your `config/services.yaml`:
+or in a better way by argument specified in your `config/services.yaml`:
 
 ```
 services:
