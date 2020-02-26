@@ -157,7 +157,7 @@ $ composer install
 $ bin/console doctrine:migrations:migrate
 ```
 
-**Important:** remember than you must specify these two arguments in your `config/services.yaml` when including service into your project:
+**Important:** remember that you must specify these two arguments in your `config/services.yaml` when including service into your project:
 
 ```
 services:
